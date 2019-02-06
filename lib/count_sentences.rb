@@ -16,7 +16,11 @@ class String
 
   def count_sentences
     count_array = []
-    count_array << self.split(/[!.?]/)
+      split_string = self.split(/[!.?]/)
+    #count_array << self.split(/[!.?]/)
+    unless split_string == nil
+      count_array << split_string
+    end
     binding.pry
     #count_array.count
     return count_array.flatten.count
