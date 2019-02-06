@@ -19,5 +19,5 @@ class String
     count_array << self.split('.','!','?')
     binding.pry
   end
-  return count_array.count
+  #return count_array.count
 end
