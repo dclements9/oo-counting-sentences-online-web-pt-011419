@@ -17,8 +17,9 @@ class String
   def count_sentences
     count_array = []
     count_array << self.split(/[!.?]/)
-    #binding.pry
-    count_array.count
+    binding.pry
+    #count_array.count
+    return count_array.count
   end
-  #return count_array.count
+
 end
