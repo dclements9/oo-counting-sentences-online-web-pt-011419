@@ -18,6 +18,7 @@ class String
     count_array = []
     count_array << self.split('.','!','?')
     binding.pry
+    count_array
   end
   #return count_array.count
 end
