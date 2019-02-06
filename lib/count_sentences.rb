@@ -18,7 +18,7 @@ class String
     count_array = []
       split_string = self.split(/[!.?]/)
     #count_array << self.split(/[!.?]/)
-    unless split_string == nil
+    unless split_string.empty?
       count_array << split_string
     end
     binding.pry
