@@ -15,14 +15,6 @@ class String
   end
 
   def count_sentences
-    count_array = []
-
-    #count_array << self.split(/[!.?]/)
-    count_array << self.split(/\.|\?|\!/)
-
-    binding.pry
-    #count_array.count
-    return count_array.flatten.count
+    self.split(/[!.?]/).count{|x| x != ""}
   end
-
 end
