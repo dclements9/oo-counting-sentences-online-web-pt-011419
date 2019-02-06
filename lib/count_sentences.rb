@@ -19,7 +19,7 @@ class String
     count_array << self.split(/[!.?]/)
     binding.pry
     #count_array.count
-    return count_array.count
+    return count_array.flatten.count
   end
 
 end
